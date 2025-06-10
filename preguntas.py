@@ -6,14 +6,14 @@ preguntas_basicas = {
                      ['Odin', 0]]},
     'pregunta_2': {'enunciado':['¿Cuál dios fue faraon por 1000 años?'],
     'alternativas': [['Odin', 0], 
-                     ['Ra', 1], 
+                     ['Seth', 0], 
                      ['Zeus', 0], 
-                     ['Seth', 0]]},
+                     ['Ra', 1]]},
     
 'pregunta_3': {'enunciado':['¿Qué dios tiene 2 cuervos ayudantes y vive en Asgard?'],
     'alternativas': [['Zeus', 0], 
-                     ['Odin', 1], 
                      ['Ra', 0], 
+                     ['Odin', 1], 
                      ['Loki', 0]]}
 }
 
@@ -24,8 +24,8 @@ preguntas_intermedias = {
                      ['Loki', 0], 
                      ['Heimdall', 0]]},
     'pregunta_2': {'enunciado':['En la mitología griega, ¿Quién es el dios del inframundo?'],
-    'alternativas': [['Zeus', 0], 
-                     ['Hades', 1], 
+    'alternativas': [['Hades', 1],
+                     ['Zeus', 0], 
                      ['Ares', 0], 
                      ['Poseidon', 0]]},
     
