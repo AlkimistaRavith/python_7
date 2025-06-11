@@ -40,7 +40,7 @@ preguntas_avanzadas = {
     'pregunta_1': {'enunciado':['En la mitología griega, ¿Quien fue Calisto?'],
     'alternativas': [['Sacerdotiza de Atenea, quien se acostó con Poseidon en el templo de Atenea y fue castigada y transformada en Medusa.', 0], 
                      ['Cazadora del cortejo de Artemisa, quien fue engañada por Zeus transformado en Artemisa, para acostarse con ella. De castigo fue transformada en osa, y Zeus la convirtió en la constelación de la Osa Mayor.', 1], 
-                     ['Hija de Demeter, raptada por Hades para ser su esposa. Aunque fue devuelta, debe pasar 6 meses en el Inframundo, para cumplir su voto de esposa.]', 0], 
+                     ['Hija de Demeter, raptada por Hades para ser su esposa. Aunque fue devuelta, debe pasar 6 meses en el Inframundo, para cumplir su voto de esposa.', 0], 
                      ['Esposa de Anfitrión, quien fue engañada y embarazada por Zeus, dando a luz al semidios Heracles (o Hércules).', 0]]},
     'pregunta_2': {'enunciado':['Luego de su retiro como faraon, Ra dios del Sol, se enfrenta cada noche a una bestia que representa la oscuridad y el caos cósmico. ¿Quién es esta bestia?'],
     'alternativas': [['El escarabajo Khepri', 0], 

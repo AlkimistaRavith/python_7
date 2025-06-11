@@ -6,12 +6,14 @@ def validate(opciones, eleccion):
         eleccion = input("Ingrese una opción: ").lower()
     return eleccion
 
-#opciones de validación
-opciones = ["a", "b", "c", "d"]    
+  
 
 
 if __name__ == '__main__':
+    
+     opciones = ["a", "b", "c", "d"]  #validación con letras
+    # opciones = ["0", "1"] #validación con numeros 
+    # (alternan) el # entre opciones de letras o numeros, para probar.
     eleccion = input('Ingresa una Opción: ').lower()
-
     resultado = validate(opciones, eleccion)
     print(f"Opción válida ingresada: {resultado}")
