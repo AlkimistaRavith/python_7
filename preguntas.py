@@ -10,7 +10,7 @@ preguntas_basicas = {
                      ['Zeus', 0], 
                      ['Ra', 1]]},
     
-'pregunta_3': {'enunciado':['¿Qué dios tiene 2 cuervos ayudantes y vive en Asgard?'],
+    'pregunta_3': {'enunciado':['¿Qué dios tiene 2 cuervos ayudantes y vive en Asgard?'],
     'alternativas': [['Zeus', 0], 
                      ['Ra', 0], 
                      ['Odin', 1], 
@@ -29,7 +29,7 @@ preguntas_intermedias = {
                      ['Ares', 0], 
                      ['Poseidon', 0]]},
     
-'pregunta_3': {'enunciado':['En la mitología egipcia, ¿Quien era la diosa de la maternidad, la magia y la protección?'],
+    'pregunta_3': {'enunciado':['En la mitología egipcia, ¿Quien era la diosa de la maternidad, la magia y la protección?'],
     'alternativas': [['Bastet', 0], 
                      ['Isis', 1], 
                      ['Uadjet', 0], 
@@ -48,7 +48,7 @@ preguntas_avanzadas = {
                      ['La serpiente gigante Apofis', 1], 
                      ['La criatura infernal Ammit.', 0]]},
     
-'pregunta_3': {'enunciado':['En la mitología nordica, ¿Cómo se llaman los 2 cuervos de Odin, que representan el pensamiento y la memoria.'],
+    'pregunta_3': {'enunciado':['En la mitología nordica, ¿Cómo se llaman los 2 cuervos de Odin, que representan el pensamiento y la memoria.'],
     'alternativas': [['Fenrir y Jormungandr', 0], 
                      ['Hugin y Munin.', 1], 
                      ['Tanngrisnir y Tanngnjóstr', 0], 
