@@ -47,25 +47,27 @@ while True:
         break
     else:
         print('Por favor, ingrese un número válido entre 1 y 3.')
-    
+    #Se valida que la opcion sea un digito (para que no de ErrorValue) y este entre 1 y 3, o solicite estar entre 1 y 3
 
 # Funcionamiento de preguntas
 while correcto and n_pregunta < 3*p_level:
     
+    #inicio con un continuar "yes"
     if continuar == 'y':
         #contador de preguntas
         n_pregunta += 1
         # 4. Validar el número de nivel
         nivel = choose_level(n_pregunta, p_level).lower()
+        #selecciona el nivel con el n_pregunta en que va la iteración y las preguntas por nivel seleccionado incialmente.
         
-        
-        print(f'Pregunta {n_pregunta}:')
+
         # 5. Escoger el enunciado y las alternativas de una pregunta según el nivel escogido
         pregunta, alternativas = choose_q(nivel)
+        #6. Imprimir el enunciado y sus alternativas en pantalla
+        print(f'Pregunta {n_pregunta}:')
         print(f"El enunciado es: {pregunta}")
         print("Las alternativas son:")
-
-        #6. Imprimir el enunciado y sus alternativas en pantalla
+        #alternativas
         letras = ["a","b","c","d"]
         for i, alternativa in enumerate(alternativas):
             texto = alternativa[0]
