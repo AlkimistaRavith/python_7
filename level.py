@@ -8,15 +8,15 @@ def choose_level(n_pregunta, p_level):
             return ""
         #diccionario para guardar los numeros de las preguntas según su nivel.
         preguntas = {
-            "Basica": [],
-            "Intermedia": [],
-            "Avanzada": []
+            "Basicas": [],
+            "Intermedias": [],
+            "Avanzadas": []
         }
 
         for i in range(1, p_level + 1):
-            preguntas["Basica"].append(i) #lista las preguntas basicas en los primeros numeros.
-            preguntas["Intermedia"].append(i + p_level) #lista las preguntas intermedias en los numeros medios.
-            preguntas["Avanzada"].append(i + 2 * p_level) #lista las preguntas avanzadas en los últimos numeros.
+            preguntas["Basicas"].append(i) #lista las preguntas basicas en los primeros numeros.
+            preguntas["Intermedias"].append(i + p_level) #lista las preguntas intermedias en los numeros medios.
+            preguntas["Avanzadas"].append(i + 2 * p_level) #lista las preguntas avanzadas en los últimos numeros.
 
         for nivel, indices in preguntas.items():
             #El numero de pregunta solicitado está en una de las lista del diccionario(indices), entrega el resultado correspondiente (nivel).
