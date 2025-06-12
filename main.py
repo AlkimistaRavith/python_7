@@ -58,7 +58,7 @@ while correcto and n_pregunta < 3*p_level:
         # 4. Validar el número de nivel
         nivel = choose_level(n_pregunta, p_level).lower()
         
-        pregunta = choose_q(nivel)
+        
         print(f'Pregunta {n_pregunta}:')
         # 5. Escoger el enunciado y las alternativas de una pregunta según el nivel escogido
         pregunta, alternativas = choose_q(nivel)
