@@ -1,12 +1,12 @@
 import preguntas as p
 
-def verificar(alternativas, eleccion):
+def verificar(alternativas, respuesta):
     try:
         # Converitr elección ["a","b","c","d"] a índice
-        eleccion = ["a","b","c","d"].index(eleccion)
+        respuesta = ["a","b","c","d"].index(respuesta)
 
         # revisa si la alternativa seleccionada tiene un 1 (es correcta)
-        if alternativas[eleccion][1] == 1:
+        if alternativas[respuesta][1] == 1:
             print("Respuesta Correcta")
             return True
         else:

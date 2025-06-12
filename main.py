@@ -38,39 +38,44 @@ if opcion == '0':
     os.system(op_sys)
     sys.exit()
     # finaliza programa
+
+# 3. Validar el número de preguntas por nivel
+while True:
+    p_level = input('¿Cuántas preguntas por nivel? (Máximo 3): ')
+    if p_level.isdigit() and 1 <= int(p_level) <= 3:
+        p_level = int(p_level)
+        break
+    else:
+        print('Por favor, ingrese un número válido entre 1 y 3.')
     
 
 # Funcionamiento de preguntas
 while correcto and n_pregunta < 3*p_level:
     
-    if n_pregunta == 0:
-        # 3. Validar el número de preguntas por nivel
-        while True:
-            p_level = input('¿Cuántas preguntas por nivel? (Máximo 3): ')
-            if p_level.isdigit() and 1 <= int(p_level) <= 3:
-                p_level = int(p_level)
-                break
-            else:
-                print('Por favor, ingrese un número válido entre 1 y 3.')
-        
     if continuar == 'y':
         #contador de preguntas
         n_pregunta += 1
         # 4. Validar el número de nivel
-        nivel = choose_level(n_pregunta, p_level)
-      
+        nivel = choose_level(n_pregunta, p_level).lower()
+        
         pregunta = choose_q(nivel)
         print(f'Pregunta {n_pregunta}:')
         # 5. Escoger el enunciado y las alternativas de una pregunta según el nivel escogido
-        #enunciado, alternativas = 
+        pregunta, alternativas = choose_q(nivel)
+        print(f"El enunciado es: {pregunta}")
+        print("Las alternativas son:")
+
         #6. Imprimir el enunciado y sus alternativas en pantalla
-        
+        letras = ["a","b","c","d"]
+        for i, alternativa in enumerate(alternativas):
+            texto = alternativa[0]
+            print(f"{letras[i]}. {texto}")
         
         respuesta = input('Escoja la alternativa correcta:\n> ').lower()
         # 7. Validar la respuesta entregada
-        respuesta = validate(respuesta, ['a', 'b', 'c', 'd'])
+        respuesta = validate(respuesta, ["a","b","c","d"])
         # 8. Verificar si la respuesta es correcta o no
-        correcto = verificar(pregunta, respuesta)
+        correcto = verificar(alternativas, respuesta)
         
         if correcto and n_pregunta < 3*p_level:
             print('Muy bien sigue así!')

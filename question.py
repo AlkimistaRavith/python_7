@@ -10,10 +10,6 @@ opciones_disponibles = {
 }
 
 def choose_q(dificultad):
-    #Si no quedan preguntas en una dificultad.
-    if not opciones_disponibles[dificultad]:
-        raise ValueError(f"No quedan preguntas disponibles en el nivel {dificultad}.")
-
     # Elegir aleatoriamente una pregunta disponible, de la dificultad
     n_elegido = random.choice(opciones_disponibles[dificultad])
     opciones_disponibles[dificultad].remove(n_elegido)
@@ -31,27 +27,17 @@ def choose_q(dificultad):
 if __name__ == "__main__":
     #Para iterar varias veces, eliminando preguntas de distinto nivel en cada iteracion 
     # y dejando un mensaje si no quedan preguntas de un nivel
-    opciones = ["1", "2", "3"]
-    opcion_nivel = "1"
-    while opcion_nivel in opciones:
-        try:
-            opcion_nivel = input("Selecciona nivel de dificultad (1 = básicas, 2 = intermedias, 3 = avanzadas, otro para salir): ")
-            
-            if opcion_nivel == "1":
-                nivel = "basicas"
-            elif opcion_nivel == "2":
-                nivel = "intermedias"
-            elif opcion_nivel == "3":
-                nivel = "avanzadas"
-            else:
-                print("Fin")
-                break
+    pregunta, alternativas = choose_q('basicas')
+    print(f'El enunciado es: {pregunta}')
+    print(f'Las alternativas son: {alternativas}')
+    print(opciones_disponibles)
 
-            pregunta, alternativas = choose_q(nivel)
-            print(f"El enunciado es: {pregunta}")
-            print("Las alternativas son:")
-            for alt in alternativas:
-                print(alt)
-        except ValueError as e:
-            print(e)
-        continue
+    pregunta, alternativas = choose_q('basicas')
+    print(f'El enunciado es: {pregunta}')
+    print(f'Las alternativas son: {alternativas}')
+    print(opciones_disponibles)
+
+    pregunta, alternativas = choose_q('basicas')
+    print(f'El enunciado es: {pregunta}')
+    print(f'Las alternativas son: {alternativas}')
+    print(opciones_disponibles)
